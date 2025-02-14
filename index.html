@@ -12,35 +12,39 @@
   </head>
   <body>
     <div class="header">
-      <img src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix" />
+      <img
+        class="header__image"
+        src="./eisenhower-matrix.jpg"
+        alt="Eisenhower Matrix"
+      />
       <a
-        class="more-info"
+        class="header__more-info"
         href="https://goal-life.com/page/method/matrix-eisenhower"
         >Want more details?</a
       >
     </div>
     <div class="main-container">
-      <section id="taskSection">
-        <label for="new-task">Add Item</label>
-        <div class="task-input">
+      <section class="task-section">
+        <label class="task-section__label" for="new-task">Add Item</label>
+        <div class="task-section__input">
           <input
             id="new-task"
-            class="task"
+            class="task-section__input-field"
             type="text"
             placeholder="Enter new task"
           />
-          <button id="add-task">Add</button>
+          <button class="task-section__add-btn" id="add-task">Add</button>
         </div>
       </section>
-      <section>
-        <h3>Todo</h3>
-        <ul id="incompleteTasks"></ul>
+      <section class="task-list">
+        <h3 class="task-list__title">Todo</h3>
+        <ul class="task-list__items" id="incompleteTasks"></ul>
       </section>
-      <section>
-        <h3>Completed</h3>
-        <ul id="completed-tasks"></ul>
+      <section class="task-list task-list--completed">
+        <h3 class="task-list__title">Completed</h3>
+        <ul class="task-list__items" id="completed-tasks"></ul>
       </section>
     </div>
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
