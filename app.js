@@ -5,8 +5,6 @@
 //Solution: Add interactivity so the user can manage daily tasks.
 //Break things down into smaller steps and take each step at a time.
 
-// Event handling, user interaction is what starts the code execution.
-
 document.addEventListener('DOMContentLoaded', () => {
   const taskInput = document.getElementById('new-task');
   const addButton = document.getElementById('add-task');
