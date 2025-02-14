@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   completedTasksHolder.addEventListener('click', (e) => {
+    if (e.target.classList.contains('edit')) editTask(e);
     if (e.target.classList.contains('delete') || e.target.tagName === 'IMG')
       deleteTask(e);
   });
